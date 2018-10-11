@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let randomInt = Int.random(in: 0..<11)
+    @IBOutlet weak var showNumber: UILabel!
+    
+    @IBAction func button(_ sender: Any) {
+        showNumber.text = "\randomInt.text"
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
