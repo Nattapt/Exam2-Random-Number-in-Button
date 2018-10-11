@@ -10,17 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let randomInt = Int.random(in: 0..<11)
+    
     @IBOutlet weak var showNumber: UILabel!
     
     @IBAction func button(_ sender: Any) {
+        let randomInt = Int.random(in: 0..<11)
         showNumber.text = "\(randomInt)"
     }
     
     
+    @IBAction func reSetButton(_ sender: Any) {
+        showNumber.text = "0"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        button(self)
     }
 
 

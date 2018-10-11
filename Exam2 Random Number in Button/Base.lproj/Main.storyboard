@@ -18,24 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C5-yq-w51">
-                                <rect key="frame" x="159" y="318.5" width="57" height="30"/>
+                                <rect key="frame" x="151" y="315.5" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Random"/>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XbA-NE-UgD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7N-93-vc9">
-                                <rect key="frame" x="166" y="217" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="152" y="199" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZU-7w-yNC">
+                                <rect key="frame" x="162.5" y="394" width="50" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reSetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T19-Ev-C6p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8C5-yq-w51" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0X5-Dl-RpS"/>
                             <constraint firstItem="8C5-yq-w51" firstAttribute="top" secondItem="i7N-93-vc9" secondAttribute="bottom" constant="80.5" id="3Bg-3w-OLH"/>
                             <constraint firstItem="8C5-yq-w51" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VyT-qJ-X4N"/>
+                            <constraint firstItem="DZU-7w-yNC" firstAttribute="top" secondItem="8C5-yq-w51" secondAttribute="bottom" constant="42.5" id="X5f-Rh-PWn"/>
+                            <constraint firstItem="DZU-7w-yNC" firstAttribute="centerX" secondItem="8C5-yq-w51" secondAttribute="centerX" id="f89-X1-rjB"/>
                             <constraint firstItem="i7N-93-vc9" firstAttribute="centerX" secondItem="8C5-yq-w51" secondAttribute="centerX" id="yd2-8v-rdl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
