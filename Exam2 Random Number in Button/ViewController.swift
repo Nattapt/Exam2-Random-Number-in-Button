@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var showNumber: UILabel!
     
     @IBAction func button(_ sender: Any) {
-        showNumber.text = "\randomInt.text"
+        showNumber.text = "\(randomInt)"
     }
     
     
